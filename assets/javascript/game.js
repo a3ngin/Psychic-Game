@@ -8,7 +8,7 @@
     var win = 0;
     var loss = 0;
     var triesleft = 9;
-    var letter = any;
+    var letter;
 
     document.onkeyup = function(event) {
         var userGuess = event.key.toLowerCase();
@@ -44,9 +44,8 @@
     function randomletter() {
         var str = "abcdefghijklmnopqrstuvwxyz";
         var x = Math.floor(Math.random() * (26));
-        var letter;
         console.log(x);
-        var letter = str.charAt(x);
+        letter = str.charAt(x);
         console.log(letter);
         return letter;
     }
