@@ -38,6 +38,7 @@ document.onkeyup = function (event) {
     else {
         triesleft--;
         guess += userGuess + space;
+        document.getElementById("guesses-left-text").textContent = "Guesses left: " + triesleft;
         console.log(guess);
         document.getElementById("guesses-so-far-text").textContent= "Guesses so far:" + guess;        
         if (triesleft == 0) {
